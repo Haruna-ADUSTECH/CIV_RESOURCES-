@@ -80,6 +80,23 @@ ul li:hover {
     background-color: #cce7ee; /* Slightly darker blue for hover */
 }
 
+/* Footer styling */
+footer {
+    background-color: #005f73; /* Dark blue background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center-align text */
+    margin-top: 30px; /* Margin at the top */
+}
+
+.footer-content {
+    width: 80%; /* Width of footer content */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center the content */
+    font-size: 0.9em; /* Slightly smaller font size */
+    line-height: 1.6; /* Line height for readability */
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
