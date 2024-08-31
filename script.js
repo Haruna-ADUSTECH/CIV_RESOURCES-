@@ -1,133 +1,154 @@
 const textbooks = [
-    { name: "Engineering Mechanics: Dynamics", url: "https://dspace.mit.edu/handle/1721.1/33982" },
-    { name: "Introduction to Geotechnical Engineering", url: "https://www.geotechpedia.com/Publication" },
-    { name: "Civil Engineering Materials", url: "https://www.civildigital.com/civil-engineering-materials-textbooks/" },
-    { name: "Structural Analysis Textbooks", url: "https://www.structurespro.info/books" },
-    { name: "Fundamentals of Structural Analysis", url: "https://www.ce.memphis.edu/1112/notes/book/Chapters/" },
-    { name: "Concrete Design Handbook", url: "https://www.cement.org/docs/default-source/fc_concrete_technology/dictionary.pdf" },
-    { name: "Hydraulic Engineering Textbooks", url: "https://openstax.org/subjects/engineering" },
-    { name: "Steel Design Guide", url: "https://www.aisc.org/education/design-guides/" },
-    { name: "Foundation Design Textbooks", url: "https://b-ok.africa/s/foundation%20design" },
-    { name: "Environmental Engineering and Science", url: "https://www.engr.colostate.edu/ce/ce-old/courses/ce421/Syllabus.pdf" },
-    { name: "Fluid Mechanics: Fundamentals and Applications", url: "https://www.academia.edu/35478868/" },
-    { name: "Transportation Engineering and Planning", url: "https://archive.org/details/TransportationEngineeringAndPlanning" },
-    { name: "Building Construction Illustrated", url: "https://www.pdfdrive.com/building-construction-illustrated-pdf-download.html" },
-    { name: "Surveying and Levelling", url: "https://www.civilengineering.pk/category/civil-engineering-books/" },
-    { name: "Reinforced Concrete Design", url: "https://www.elsevier.com/books/reinforced-concrete-design/standards/978-0-7506-6814-9" },
-    { name: "Mechanics of Materials", url: "https://books.google.com/books?id=Mechanics-of-Materials" },
-    { name: "Construction Project Management", url: "https://www.coursera.org/learn/construction-management" },
-    { name: "Introduction to Structural Analysis", url: "https://www.barnesandnoble.com/w/introduction-to-structural-analysis-john-bentley/1115734382" },
-    { name: "Water Resources Engineering", url: "https://archive.org/details/water-resources-engineering" },
-    { name: "Geotechnical Engineering Principles", url: "https://www.amazon.com/Geotechnical-Engineering-Principles-Practices-Second/dp/0132368494" }
+    { name: "Open Textbook Library - Civil Engineering", url: "https://open.umn.edu/opentextbooks/subjects/engineering" },
+    { name: "MIT OpenCourseWare - Civil and Environmental Engineering", url: "https://ocw.mit.edu/courses/civil-and-environmental-engineering/" },
+    { name: "Saylor Academy - Civil Engineering", url: "https://learn.saylor.org/course/CE301" },
+    { name: "Free Engineering Books - Civil Engineering", url: "https://www.freeengineeringbooks.com/Civil-Engineering-Books.php" },
+    { name: "Engineering Books PDF", url: "https://www.engineeringbookspdf.com/" },
+    { name: "Bookboon - Civil Engineering", url: "https://bookboon.com/en/civil-engineering-ebooks" },
+    { name: "IntechOpen - Civil Engineering", url: "https://www.intechopen.com/books/subject/civil-engineering" },
+    { name: "Textbook Revolution - Civil Engineering", url: "http://textbookrevolution.org/index.php/Engineering#Civil_Engineering" },
+    { name: "Civil Engineering Knowledge Base", url: "https://www.aboutcivil.org/" },
+    { name: "Library Genesis - Civil Engineering", url: "https://libgen.is/" },
+    { name: "Online Civil Engineering Textbooks", url: "https://www.civilengineeringstudy.in/" },
+    { name: "Lecture Notes - Civil Engineering", url: "https://lecturenotes.in/subject/291/civil-engineering" },
+    { name: "CivilDigital - Free Civil Engineering Books", url: "https://civildigital.com/free-civil-engineering-books/" },
+    { name: "NPTEL Civil Engineering Resources", url: "https://nptel.ac.in/courses/105" },
+    { name: "Civil Engineering Textbooks - Elsevier", url: "https://www.elsevier.com/books-and-journals/civil-engineering" },
+    { name: "eBooks for Civil Engineering Students", url: "https://www.sanfoundry.com/best-reference-books-civil-engineering/" },
+    { name: "Coursera - Civil Engineering Specializations", url: "https://www.coursera.org/browse/physical-science-and-engineering/civil-engineering" },
+    { name: "edX - Civil Engineering Courses", url: "https://www.edx.org/learn/civil-engineering" },
+    { name: "SpringerLink - Civil Engineering", url: "https://link.springer.com/journal/40999" },
+    { name: "Wiley Online Library - Civil Engineering", url: "https://onlinelibrary.wiley.com/subject/code/000020" }
 ];
 
 const journals = [
-    { name: "Journal of Civil Engineering and Management", url: "https://journals.vgtu.lt/index.php/JCEM" },
     { name: "ASCE Library", url: "https://ascelibrary.org/" },
-    { name: "Journal of Structural Engineering", url: "https://ascelibrary.org/journal/jseecc" },
-    { name: "International Journal of Civil Engineering", url: "https://www.springer.com/journal/40999" },
+    { name: "Civil Engineering Journal", url: "https://civilejournal.org/" },
+    { name: "Elsevier - Journal of Civil Engineering", url: "https://www.journals.elsevier.com/journal-of-civil-engineering" },
+    { name: "MDPI - Civil Engineering", url: "https://www.mdpi.com/journal/civileng" },
+    { name: "Springer - Journal of Infrastructure Systems", url: "https://www.springer.com/journal/12205" },
+    { name: "ResearchGate - Civil Engineering Articles", url: "https://www.researchgate.net/journal/Civil-Engineering-Journal-2676-7605" },
+    { name: "ScienceDirect - Civil Engineering", url: "https://www.sciencedirect.com/journal/journal-of-civil-engineering" },
+    { name: "Taylor & Francis Online - Civil Engineering", url: "https://www.tandfonline.com/toc/tjce20/current" },
+    { name: "ICE Virtual Library", url: "https://www.icevirtuallibrary.com/" },
+    { name: "Open Civil Engineering Journal", url: "https://benthamopen.com/TOCIEJ/home/" },
+    { name: "Advances in Civil Engineering", url: "https://www.hindawi.com/journals/ace/" },
+    { name: "Journal of Civil and Environmental Engineering", url: "https://www.longdom.org/civil-environmental-engineering.html" },
+    { name: "Techno-Press Journals", url: "http://www.techno-press.org/?journal=ace" },
+    { name: "Canadian Journal of Civil Engineering", url: "https://cdnsciencepub.com/journal/cjce" },
     { name: "Journal of Bridge Engineering", url: "https://ascelibrary.org/journal/jbenf2" },
-    { name: "Journal of Construction Engineering and Management", url: "https://ascelibrary.org/journal/jcemd4" },
-    { name: "Journal of Materials in Civil Engineering", url: "https://ascelibrary.org/journal/jmcee7" },
-    { name: "Earthquake Engineering and Structural Dynamics", url: "https://onlinelibrary.wiley.com/journal/10969845" },
-    { name: "Journal of Hydraulic Research", url: "https://www.tandfonline.com/toc/tjhr20/current" },
-    { name: "Journal of Environmental Engineering", url: "https://ascelibrary.org/journal/joeedu" },
-    { name: "Geotechnique", url: "https://www.icevirtuallibrary.com/journal/geot" },
-    { name: "Structural Safety", url: "https://www.journals.elsevier.com/structural-safety" },
-    { name: "Cement and Concrete Research", url: "https://www.journals.elsevier.com/cement-and-concrete-research" },
-    { name: "International Journal of Sustainable Built Environment", url: "https://www.sciencedirect.com/journal/international-journal-of-sustainable-built-environment" },
-    { name: "Journal of Geotechnical and Geoenvironmental Engineering", url: "https://ascelibrary.org/journal/jggefk" },
-    { name: "Engineering Structures", url: "https://www.journals.elsevier.com/engineering-structures" },
-    { name: "Journal of Infrastructure Systems", url: "https://ascelibrary.org/journal/jitse4" },
+    { name: "Journal of Geotechnical and Geoenvironmental Engineering", url: "https://ascelibrary.org/journal/jgtlcc" },
+    { name: "Journal of Structural Engineering", url: "https://ascelibrary.org/journal/jsendh" },
+    { name: "Journal of Hydraulic Engineering", url: "https://ascelibrary.org/journal/jhend8" },
     { name: "Journal of Transportation Engineering", url: "https://ascelibrary.org/journal/jtepbs" },
-    { name: "Journal of Water Resources Planning and Management", url: "https://ascelibrary.org/journal/jwrmd5" },
-    { name: "Smart Structures and Systems", url: "https://www.techno-press.org/journals/sst" }
+    { name: "Frontiers in Built Environment", url: "https://www.frontiersin.org/journals/built-environment" }
 ];
 
 const aiTools = [
-    { name: "AI for Structural Analysis", url: "https://www.researchgate.net/publication/327200711_Artificial_Intelligence_in_Structural_Engineering" },
-    { name: "Bluebeam Revu", url: "https://www.bluebeam.com/" },
-    { name: "Rhino Grasshopper", url: "https://www.rhino3d.com/features/grasshopper/" },
-    { name: "MATLAB Civil Engineering Toolbox", url: "https://www.mathworks.com/solutions/civil-engineering.html" },
-    { name: "MIDAS Civil", url: "https://www.midasuser.com/products/midas-civil/" },
-    { name: "Tekla Structural Designer", url: "https://www.tekla.com/products/tekla-structural-designer" },
-    { name: "AutoCAD Civil 3D", url: "https://www.autodesk.com/products/civil-3d/overview" },
-    { name: "Dlubal RFEM", url: "https://www.dlubal.com/en/" },
-    { name: "ANSYS Civil Engineering", url: "https://www.ansys.com/industries/infrastructure-and-cities" },
-    { name: "Plaxis Geotechnical Analysis", url: "https://www.bentley.com/software/plaxis/" },
-    { name: "Revit Structure", url: "https://www.autodesk.com/products/revit/overview" },
-    { name: "SOFiSTiK", url: "https://www.sofistik.com/" },
-    { name: "Artificial Intelligence for Smart City Applications", url: "https://www.mdpi.com/journal/applsci/special_issues/smart_city" },
-    { name: "ETABS Structural Analysis Software", url: "https://www.csiamerica.com/products/etabs" },
-    { name: "STAAD.Pro", url: "https://www.bentley.com/software/staadpro/" },
-    { name: "SAP2000 Structural Analysis", url: "https://www.csiamerica.com/products/sap2000" },
-    { name: "DeepEX Excavation Design Software", url: "https://www.deepex.com/" },
-    { name: "Geo5 Geotechnical Software", url: "https://www.finesoftware.eu/" },
-    { name: "AI for Predictive Maintenance in Civil Infrastructure", url: "https://www.mdpi.com/journal/infrastructures/special_issues/AI_Predictive" },
-    { name: "Machine Learning for Structural Health Monitoring", url: "https://link.springer.com/book/10.1007/978-3-030-62193-6" },
-    { name: "OpenFOAM CFD Software for Civil Applications", url: "https://www.openfoam.com/" },
-    { name: "Digital Twins for Civil Engineering", url: "https://www.ge.com/digital/applications/digital-twin" },
-    { name: "ArcGIS for Civil Engineers", url: "https://www.esri.com/en-us/arcgis/products/arcgis-online/overview" }
+    { name: "OpenAI for Civil Engineering", url: "https://openai.com/" },
+    { name: "DeepAI", url: "https://deepai.org/" },
+    { name: "DataRobot", url: "https://www.datarobot.com/" },
+    { name: "Google AI", url: "https://ai.google/" },
+    { name: "IBM Watson", url: "https://www.ibm.com/watson" },
+    { name: "Azure AI", url: "https://azure.microsoft.com/en-us/services/cognitive-services/" },
+    { name: "TensorFlow", url: "https://www.tensorflow.org/" },
+    { name: "PyTorch", url: "https://pytorch.org/" },
+    { name: "MATLAB AI Toolbox", url: "https://www.mathworks.com/products/matlab.html" },
+    { name: "Civils.ai", url: "https://civils.ai/" },
+    { name: "Smart Infrastructure AI", url: "https://www.smartinfrastructure.ai/" },
+    { name: "Kiwi AI", url: "https://www.kiwi.ai/" },
+    { name: "AI for Building Design", url: "https://www.simscale.com/" },
+    { name: "DeepMind", url: "https://www.deepmind.com/" },
+    { name: "UrbanFootprint AI", url: "https://urbanfootprint.com/" },
+    { name: "Archistar AI", url: "https://archistar.ai/" },
+    { name: "Bentley AI Tools", url: "https://www.bentley.com/en/products/brands/openai" },
+    { name: "Seequent AI", url: "https://www.seequent.com/" },
+    { name: "Skydio 3D Scan AI", url: "https://www.skydio.com/" },
+    { name: "NVIDIA AI Tools", url: "https://developer.nvidia.com/" }
 ];
 
 const otherResources = [
     { name: "American Society of Civil Engineers (ASCE)", url: "https://www.asce.org/" },
     { name: "Institution of Civil Engineers (ICE)", url: "https://www.ice.org.uk/" },
-    { name: "Structural Engineers Association", url: "https://www.seaoc.org/" },
-    { name: "Concrete Society", url: "https://www.concrete.org.uk/" },
-    { name: "Building Research Establishment (BRE)", url: "https://www.bregroup.com/" },
-    { name: "International Federation for Structural Concrete (fib)", url: "https://www.fib-international.org/" },
-    { name: "American Concrete Institute", url: "https://www.concrete.org/" },
-    { name: "Engineering Toolbox", url: "https://www.engineeringtoolbox.com/" },
-    { name: "Civil Engineering Forum", url: "https://www.civilax.com/" },
-    { name: "Society of Civil Engineers", url: "https://www.societyofcivilengineers.com/" },
-    { name: "National Institute of Building Sciences", url: "https://www.nibs.org/" },
-    { name: "Geoengineer.org", url: "https://www.geoengineer.org/" },
-    { name: "Civil Engineering Portal", url: "https://www.engineeringcivil.com/" },
     { name: "Concrete Network", url: "https://www.concretenetwork.com/" },
-    { name: "Construction Dive", url: "https://www.constructiondive.com/" },
+    { name: "Geoengineer.org", url: "https://www.geoengineer.org/" },
+    { name: "Civilax", url: "https://www.civilax.com/" },
+    { name: "Engineering Toolbox", url: "https://www.engineeringtoolbox.com/" },
+    { name: "National Concrete Masonry Association", url: "https://ncma.org/" },
+    { name: "Concrete Construction Magazine", url: "https://www.concreteconstruction.net/" },
+    { name: "Cement.org", url: "https://www.cement.org/" },
+    { name: "Steel Construction.info", url: "https://www.steelconstruction.info/" },
+    { name: "Bridge Design & Engineering", url: "https://www.bridgeweb.com/" },
+    { name: "The Constructor", url: "https://theconstructor.org/" },
     { name: "Engineering Ethics", url: "https://onlineethics.org/" },
+    { name: "Civil Engineering Forum", url: "https://www.civilengineeringforum.me/" },
+    { name: "Civil Engineering Community", url: "https://civilengineeringcommunity.com/" },
+    { name: "Civil Engineering Resources", url: "https://civilenggworld.com/" },
+    { name: "Building Research Establishment (BRE)", url: "https://www.bregroup.com/" },
     { name: "Royal Institute of British Architects (RIBA)", url: "https://www.architecture.com/" },
-    { name: "Institute of Transportation Engineers (ITE)", url: "https://www.ite.org/" },
-    { name: "Construction Institute", url: "https://www.construction-institute.org/" },
-    { name: "National Association of Home Builders (NAHB)", url: "https://www.nahb.org/" }
+    { name: "Society of Construction Law", url: "https://www.scl.org.uk/" },
+    { name: "Construction Management Association of America (CMAA)", url: "https://www.cmaanet.org/" },
+    { name: "American Concrete Institute (ACI)", url: "https://www.concrete.org/" },
+    { name: "Global Infrastructure Hub", url: "https://www.gihub.org/" },
+    { name: "European Construction Institute", url: "https://www.eci-online.org/" },
+    { name: "New Civil Engineer", url: "https://www.newcivilengineer.com/" },
+    { name: "Urban Land Institute", url: "https://uli.org/" },
+    { name: "US Green Building Council (USGBC)", url: "https://www.usgbc.org/" },
+    { name: "National Institute of Building Sciences", url: "https://www.nibs.org/" },
+    { name: "Structural Engineers Association", url: "https://www.seaoc.org/" },
+    { name: "Construction Industry Institute", url: "https://www.construction-institute.org/" },
+    { name: "Council on Tall Buildings and Urban Habitat (CTBUH)", url: "https://www.ctbuh.org/" },
+    { name: "International Federation of Consulting Engineers (FIDIC)", url: "https://fidic.org/" },
+    { name: "American Railway Engineering and Maintenance-of-Way Association (AREMA)", url: "https://www.arema.org/" },
+    { name: "Construction Innovation Hub", url: "https://constructioninnovationhub.org.uk/" },
+    { name: "American Council of Engineering Companies (ACEC)", url: "https://www.acec.org/" },
+    { name: "International Association for Bridge and Structural Engineering (IABSE)", url: "https://www.iabse.org/" },
+    { name: "International Code Council (ICC)", url: "https://www.iccsafe.org/" }
 ];
+// Populate textbooks
+const textbookList = document.getElementById('textbook-list');
+textbooks.forEach(textbook => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = textbook.url;
+    a.textContent = textbook.name;
+    a.target = "_blank"; // Open in a new tab
+    li.appendChild(a);
+    textbookList.appendChild(li);
+});
 
-// Function to display links in the respective categories
-function displayLinks() {
-    const textbooksList = document.getElementById('textbooks-list');
-    const journalsList = document.getElementById('journals-list');
-    const aiToolsList = document.getElementById('ai-tools-list');
-    const otherResourcesList = document.getElementById('other-resources-list');
+// Populate journals
+const journalList = document.getElementById('journal-list');
+journals.forEach(journal => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = journal.url;
+    a.textContent = journal.name;
+    a.target = "_blank";
+    li.appendChild(a);
+    journalList.appendChild(li);
+});
 
-    // Add textbook links
-    textbooks.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
-        textbooksList.appendChild(li);
-    });
+// Populate AI tools
+const aiList = document.getElementById('ai-list');
+aiTools.forEach(tool => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = tool.url;
+    a.textContent = tool.name;
+    a.target = "_blank";
+    li.appendChild(a);
+    aiList.appendChild(li);
+});
 
-    // Add journal links
-    journals.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
-        journalsList.appendChild(li);
-    });
-
-    // Add AI tool links
-    aiTools.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
-        aiToolsList.appendChild(li);
-    });
-
-    // Add other resources links
-    otherResources.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
-        otherResourcesList.appendChild(li);
-    });
-}
-
-// Call the displayLinks function when the page loads
-document.addEventListener('DOMContentLoaded', displayLinks);
+// Populate other resources
+const otherList = document.getElementById('other-list');
+otherResources.forEach(resource => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = resource.url;
+    a.textContent = resource.name;
+    a.target = "_blank";
+    li.appendChild(a);
+    otherList.appendChild(li);
+});
