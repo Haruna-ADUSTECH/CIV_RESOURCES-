@@ -1,82 +1,72 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #0056b3;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.container {
     padding: 20px;
 }
 
-/* Header Styling */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    background-color: #004b80;
-    color: #fff;
-    padding: 10px;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-/* Section Styling */
-main {
-    display: grid;
-    gap: 20px;
-}
-
-section {
-    background-color: #fff;
-    border-radius: 8px;
+.category {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #004b80;
+.category h2 {
+    color: #333;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-/* List Styling */
-ul {
+.category ul {
     list-style-type: none;
+    padding: 0;
 }
 
-ul li {
-    padding: 5px 0;
+.category ul li {
+    margin-bottom: 5px;
 }
 
-ul li a {
+.category ul li a {
     text-decoration: none;
-    color: #004b80;
+    color: #0056b3;
     font-weight: bold;
 }
 
-ul li a:hover {
-    color: #ff6600;
+.category ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #666;
+    background-color: #0056b3;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
