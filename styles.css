@@ -5,6 +5,9 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styles */
@@ -37,6 +40,7 @@ h1 {
     margin-top: 120px; /* Space for the fixed header */
     padding: 20px;
     text-align: center;
+    flex-grow: 1; /* Allows the container to grow and push the footer to the bottom */
 }
 
 button {
@@ -74,14 +78,12 @@ button:hover {
 footer {
     background-color: #004080;
     color: white;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    z-index: 1000;
     font-size: 14px;
-    border-top: 0px solid #002850;
+    border-top: 3px solid #002850;
+    margin-top: auto; /* Pushes the footer to the bottom when content is less */
 }
 
 footer a {
