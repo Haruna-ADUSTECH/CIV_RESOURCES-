@@ -2,41 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIV_RESOURCES</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <img src="civil_logo.png" alt="Civil Engineering Logo">
+    <header>
+        <img src="civil_logo.png" alt="Civil Engineering Logo" class="logo">
         <h1>CIV_RESOURCES</h1>
     </header>
 
     <div class="container">
-        <div class="category">
-            <h2>Textbooks</h2>
-            <ul id="textbooks-list"></ul>
-        </div>
+        <button onclick="displayResources('textbooks')">Textbooks</button>
+        <button onclick="displayResources('journals')">Journals</button>
+        <button onclick="displayResources('aiTools')">AI Tools</button>
 
-        <div class="category">
-            <h2>Journals</h2>
-            <ul id="journals-list"></ul>
-        </div>
-
-        <div class="category">
-            <h2>AI Tools</h2>
-            <ul id="ai-tools-list"></ul>
-        </div>
-
-        <div class="category">
-            <h2>Other Resources</h2>
-            <ul id="other-resources-list"></ul>
-        </div>
+        <div id="resourceContainer"></div>
     </div>
 
+    <!-- Footer Section -->
     <footer>
-        © 2024 CIV_RESOURCES. All rights reserved.
+        <p>&copy; 2024 CIV_RESOURCES. All Rights Reserved.</p>
+        <p>Designed by [Mechatronics Department ADUSTECH].</p>
+        <p>Contact us: <a href="harunaali@kustwudil.edu.ng">info@civresources.com</a></p>
     </footer>
 
     <script src="script.js"></script>
