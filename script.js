@@ -1,5 +1,5 @@
 const textbooks = [
-    { name: "Engineering Mechanics: Dynamics", url: "https://ocw.mit.edu/courses/engineering-mechanics-dynamics/" },
+    { name: "Engineering Mechanics: Dynamics", url: "https://dspace.mit.edu/handle/1721.1/33982" },
     { name: "Introduction to Geotechnical Engineering", url: "https://www.geotechpedia.com/Publication" },
     { name: "Civil Engineering Materials", url: "https://www.civildigital.com/civil-engineering-materials-textbooks/" },
     { name: "Structural Analysis Textbooks", url: "https://www.structurespro.info/books" },
