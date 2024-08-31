@@ -1,81 +1,132 @@
-// Sample Data for Resources
-const resources = {
-    "Textbooks": [
-        { name: "Fundamentals of Civil Engineering", link: "https://www.pdfdrive.com/fundamentals-of-civil-engineering-e158591550.html" },
-        { name: "Structural Analysis", link: "https://www.pdfdrive.com/structural-analysis-and-design-e158591832.html" },
-        { name: "Geotechnical Engineering", link: "https://www.pdfdrive.com/geotechnical-engineering-e158591761.html" },
-        { name: "Hydrology and Hydraulics", link: "https://www.pdfdrive.com/hydrology-and-hydraulics-e158591897.html" },
-        { name: "Transportation Engineering", link: "https://www.pdfdrive.com/transportation-engineering-e158591900.html" },
-        { name: "Construction Management", link: "https://www.pdfdrive.com/construction-management-e158591827.html" },
-        { name: "Bridge Engineering", link: "https://www.pdfdrive.com/bridge-engineering-e158591928.html" },
-        { name: "Reinforced Concrete Design", link: "https://www.pdfdrive.com/reinforced-concrete-design-e158591876.html" },
-        { name: "Steel Structures", link: "https://www.pdfdrive.com/steel-structures-e158591873.html" },
-        { name: "Environmental Engineering", link: "https://www.pdfdrive.com/environmental-engineering-e158591884.html" },
-        { name: "Foundation Engineering", link: "https://www.pdfdrive.com/foundation-engineering-e158591836.html" },
-        { name: "Highway Engineering", link: "https://www.pdfdrive.com/highway-engineering-e158591794.html" },
-        { name: "Finite Element Analysis", link: "https://www.pdfdrive.com/finite-element-analysis-e158591873.html" },
-        { name: "Water Resources Engineering", link: "https://www.pdfdrive.com/water-resources-engineering-e158591846.html" },
-        { name: "Surveying and Levelling", link: "https://www.pdfdrive.com/surveying-and-levelling-e158591752.html" },
-        { name: "Building Materials", link: "https://www.pdfdrive.com/building-materials-e158591757.html" },
-        { name: "Structural Dynamics", link: "https://www.pdfdrive.com/structural-dynamics-e158591764.html" },
-        { name: "Earthquake Engineering", link: "https://www.pdfdrive.com/earthquake-engineering-e158591790.html" },
-        { name: "Advanced Soil Mechanics", link: "https://www.pdfdrive.com/advanced-soil-mechanics-e158591827.html" },
-        { name: "Pavement Analysis and Design", link: "https://www.pdfdrive.com/pavement-analysis-and-design-e158591835.html" }
-    ],
-    "Journals": [
-        { name: "Journal of Civil Engineering", link: "https://www.sciencedirect.com/journal/journal-of-civil-engineering" },
-        { name: "International Journal of Concrete Structures", link: "https://www.springer.com/journal/40069" },
-        { name: "Journal of Structural Engineering", link: "https://ascelibrary.org/journal/jstruct" },
-        { name: "ASCE Civil Engineering Journal", link: "https://ascelibrary.org/journal/civeng" },
-        { name: "Journal of Bridge Engineering", link: "https://ascelibrary.org/journal/jbrgeq" },
-        { name: "Journal of Construction Engineering and Management", link: "https://ascelibrary.org/journal/jcemd4" },
-        { name: "Geotechnical Engineering Journal", link: "https://www.tandfonline.com/journal/tgeo20" },
-        { name: "Journal of Hydraulic Engineering", link: "https://ascelibrary.org/journal/jhyeng" },
-        { name: "International Journal of Geo-Engineering", link: "https://link.springer.com/journal/40940" },
-        { name: "Journal of Water Resources Planning and Management", link: "https://ascelibrary.org/journal/jwrmd5" },
-        { name: "Journal of Transportation Engineering", link: "https://ascelibrary.org/journal/jtrte6" },
-        { name: "Journal of Environmental Engineering", link: "https://ascelibrary.org/journal/enveng" },
-        { name: "Journal of Earthquake Engineering", link: "https://www.tandfonline.com/journal/teee20" },
-        { name: "International Journal of Pavement Engineering", link: "https://www.tandfonline.com/journal/tpav20" },
-        { name: "Journal of Sustainable Cement-Based Materials", link: "https://www.tandfonline.com/journal/tscb20" },
-        { name: "Journal of Advanced Concrete Technology", link: "https://www.jstage.jst.go.jp/browse/jact" },
-        { name: "Journal of Structural Fire Engineering", link: "https://www.emerald.com/insight/publication/issn/2040-2317" },
-        { name: "Journal of Sustainable Infrastructure", link: "https://www.springer.com/journal/40940" },
-        { name: "International Journal of Structural Stability and Dynamics", link: "https://www.worldscientific.com/worldscinet/ijss" },
-        { name: "Journal of Advanced Transportation", link: "https://www.hindawi.com/journals/jat/" }
-    ],
-    "AI Tools": [
-        { name: "AI Tool for Structural Design", link: "https://www.autodesk.com/products/revit/overview" },
-        { name: "Machine Learning for Civil Engineering", link: "https://www.springer.com/gp/book/9783030518148" },
-        { name: "Civil Engineering AI Predictor", link: "https://www.ai-for-civil-engineering.com" },
-        { name: "Structural Optimization AI", link: "https://www.ansys.com/products/structures/ansys-structural-optimization" },
-        { name: "AI-Based Site Analysis Tool", link: "https://www.geosystems.com/site-analysis" },
-        { name: "Automated Quantity Takeoff", link: "https://www.cadsoft.com/quantity-takeoff" },
-        { name: "Geotechnical Data AI Analysis", link: "https://www.geosystems.com/ai-analysis" },
-        { name: "Traffic Flow Prediction AI", link: "https://www.traffic-ai.com" },
-        { name: "Bridge Safety Monitoring AI", link: "https://www.bridge-ai-monitoring.com" },
-        { name: "Smart City Planning AI", link: "https://www.smartcity-planning-ai.com" },
-        { name: "Pavement Condition Prediction AI", link: "https://www.pavement-ai.com" },
-        { name: "Reinforced Concrete Design AI", link: "https://www.ai-concrete-design.com" },
-        { name: "Building Information Modeling AI", link: "https://www.bim-ai-tools.com" },
-        { name: "Hydrology Prediction AI", link: "https://www.hydrology-ai.com" },
-        { name: "AI-Driven Construction Risk Management", link: "https://www.construction-risk-ai.com" },
-        { name: "Earthquake Impact Assessment AI", link: "https://www.earthquake-ai.com" },
-        { name: "AI for Construction Equipment Optimization", link: "https://www.construction-equipment-ai.com" },
-        { name: "Sustainable Construction AI Tool", link: "https://www.sustainable-construction-ai.com" },
-        { name: "Deep Learning for Structural Health Monitoring", link: "https://www.structural-health-monitoring-ai.com" },
-        { name: "AI for Environmental Impact Assessment", link: "https://www.environmental-impact-ai.com" }
-    ],
-    "Other Resources": [
-        { name: "Civil Engineering Resources Hub", link: "https://www.civilengineeringhub.com" },
-        { name: "Online Civil Engineering Courses", link: "https://www.coursera.org/courses?query=civil%20engineering" },
-        { name: "Civil Engineering Forum", link: "https://www.engineering-forum.com" },
-        { name: "Concrete Design Tutorials", link: "https://www.concrete-tutorials.com" },
-        { name: "Engineering Software Downloads", link: "https://www.engineering-software-downloads.com" },
-        { name: "Free Civil Engineering Books", link: "https://www.free-engineering-books.com/civil-engineering" },
-        { name: "Structural Engineering Library", link: "https://www.structural-engineering-library.com" },
-        { name: "Geotechnical Engineering Online Resources", link: "https://www.geotechnical-engineering-resources.com" },
-        { name: "Bridge Engineering Resources", link: "https://www.bridge-engineering-resources.com" },
-        { name: "Civil Engineering Calculators", link: "https://www.civil-engineering-calculators.com" },
-        { name: "Pavement Design Resources", link: "https://www.pavement-design-resources.com" },
-        { name: "Hydraulics and Hydrology Resources", link:
+const textbooks = [
+    { name: "Engineering Mechanics: Dynamics", url: "https://ocw.mit.edu/courses/engineering-mechanics-dynamics/" },
+    { name: "Introduction to Geotechnical Engineering", url: "https://www.geotechpedia.com/Publication" },
+    { name: "Civil Engineering Materials", url: "https://www.civildigital.com/civil-engineering-materials-textbooks/" },
+    { name: "Structural Analysis Textbooks", url: "https://www.structurespro.info/books" },
+    { name: "Fundamentals of Structural Analysis", url: "https://www.ce.memphis.edu/1112/notes/book/Chapters/" },
+    { name: "Concrete Design Handbook", url: "https://www.cement.org/docs/default-source/fc_concrete_technology/dictionary.pdf" },
+    { name: "Hydraulic Engineering Textbooks", url: "https://openstax.org/subjects/engineering" },
+    { name: "Steel Design Guide", url: "https://www.aisc.org/education/design-guides/" },
+    { name: "Foundation Design Textbooks", url: "https://b-ok.africa/s/foundation%20design" },
+    { name: "Environmental Engineering and Science", url: "https://www.engr.colostate.edu/ce/ce-old/courses/ce421/Syllabus.pdf" },
+    { name: "Fluid Mechanics: Fundamentals and Applications", url: "https://www.academia.edu/35478868/" },
+    { name: "Transportation Engineering and Planning", url: "https://archive.org/details/TransportationEngineeringAndPlanning" },
+    { name: "Building Construction Illustrated", url: "https://www.pdfdrive.com/building-construction-illustrated-pdf-download.html" },
+    { name: "Surveying and Levelling", url: "https://www.civilengineering.pk/category/civil-engineering-books/" },
+    { name: "Reinforced Concrete Design", url: "https://www.elsevier.com/books/reinforced-concrete-design/standards/978-0-7506-6814-9" },
+    { name: "Mechanics of Materials", url: "https://books.google.com/books?id=Mechanics-of-Materials" },
+    { name: "Construction Project Management", url: "https://www.coursera.org/learn/construction-management" },
+    { name: "Introduction to Structural Analysis", url: "https://www.barnesandnoble.com/w/introduction-to-structural-analysis-john-bentley/1115734382" },
+    { name: "Water Resources Engineering", url: "https://archive.org/details/water-resources-engineering" },
+    { name: "Geotechnical Engineering Principles", url: "https://www.amazon.com/Geotechnical-Engineering-Principles-Practices-Second/dp/0132368494" }
+];
+
+const journals = [
+    { name: "Journal of Civil Engineering and Management", url: "https://journals.vgtu.lt/index.php/JCEM" },
+    { name: "ASCE Library", url: "https://ascelibrary.org/" },
+    { name: "Journal of Structural Engineering", url: "https://ascelibrary.org/journal/jseecc" },
+    { name: "International Journal of Civil Engineering", url: "https://www.springer.com/journal/40999" },
+    { name: "Journal of Bridge Engineering", url: "https://ascelibrary.org/journal/jbenf2" },
+    { name: "Journal of Construction Engineering and Management", url: "https://ascelibrary.org/journal/jcemd4" },
+    { name: "Journal of Materials in Civil Engineering", url: "https://ascelibrary.org/journal/jmcee7" },
+    { name: "Earthquake Engineering and Structural Dynamics", url: "https://onlinelibrary.wiley.com/journal/10969845" },
+    { name: "Journal of Hydraulic Research", url: "https://www.tandfonline.com/toc/tjhr20/current" },
+    { name: "Journal of Environmental Engineering", url: "https://ascelibrary.org/journal/joeedu" },
+    { name: "Geotechnique", url: "https://www.icevirtuallibrary.com/journal/geot" },
+    { name: "Structural Safety", url: "https://www.journals.elsevier.com/structural-safety" },
+    { name: "Cement and Concrete Research", url: "https://www.journals.elsevier.com/cement-and-concrete-research" },
+    { name: "International Journal of Sustainable Built Environment", url: "https://www.sciencedirect.com/journal/international-journal-of-sustainable-built-environment" },
+    { name: "Journal of Geotechnical and Geoenvironmental Engineering", url: "https://ascelibrary.org/journal/jggefk" },
+    { name: "Engineering Structures", url: "https://www.journals.elsevier.com/engineering-structures" },
+    { name: "Journal of Infrastructure Systems", url: "https://ascelibrary.org/journal/jitse4" },
+    { name: "Journal of Transportation Engineering", url: "https://ascelibrary.org/journal/jtepbs" },
+    { name: "Journal of Water Resources Planning and Management", url: "https://ascelibrary.org/journal/jwrmd5" },
+    { name: "Smart Structures and Systems", url: "https://www.techno-press.org/journals/sst" }
+];
+
+const aiTools = [
+    { name: "AI for Structural Analysis", url: "https://www.researchgate.net/publication/327200711_Artificial_Intelligence_in_Structural_Engineering" },
+    { name: "Bluebeam Revu", url: "https://www.bluebeam.com/" },
+    { name: "Rhino Grasshopper", url: "https://www.rhino3d.com/features/grasshopper/" },
+    { name: "MATLAB Civil Engineering Toolbox", url: "https://www.mathworks.com/solutions/civil-engineering.html" },
+    { name: "MIDAS Civil", url: "https://www.midascivil.com/" },
+    { name: "STAAD.Pro", url: "https://www.bentley.com/en/products/brands/staad" },
+    { name: "AutoCAD Civil 3D", url: "https://www.autodesk.com/products/civil-3d/overview" },
+    { name: "Revit", url: "https://www.autodesk.com/products/revit/overview" },
+    { name: "Tekla Structures", url: "https://www.tekla.com/products/tekla-structures" },
+    { name: "CYPECAD", url: "https://cype.en.softonic.com/" },
+    { name: "Robot Structural Analysis", url: "https://www.autodesk.com/products/robot-structural-analysis/overview" },
+    { name: "Plaxis", url: "https://www.bentley.com/en/products/brands/plaxis" },
+    { name: "ProtaStructure", url: "https://www.protasoftware.com/products/protastructure-suite/structural-engineering-software/" },
+    { name: "Dlubal RFEM", url: "https://www.dlubal.com/en/" },
+    { name: "OpenSees Navigator", url: "https://opensees.berkeley.edu/OpenSeesNavigator" },
+    { name: "Grasshopper AI Plugin", url: "https://www.food4rhino.com/app/elefront" },
+    { name: "CivilGEO", url: "https://www.civilgeo.com/" },
+    { name: "AI for Earthquake Prediction", url: "https://seismo-learn.org/software/ai-for-seismology/" },
+    { name: "GRAITEC Advance Design", url: "https://www.graitec.com/advance-design/" },
+    { name: "SAP2000", url: "https://www.csiamerica.com/products/sap2000" }
+];
+
+const otherResources = [
+    { name: "Civil Engineering Academy", url: "https://civilengineeringacademy.com/" },
+    { name: "Bridge Design Resources", url: "https://www.bridgeweb.com/" },
+    { name: "CivilDigital", url: "https://www.civildigital.com/" },
+    { name: "Engineering.com", url: "https://www.engineering.com/" },
+    { name: "Civil Engineering Blog", url: "https://www.civilenggblog.com/" },
+    { name: "Engineering Civil", url: "https://www.engineeringcivil.com/" },
+    { name: "Geoengineer.org", url: "https://www.geoengineer.org/" },
+    { name: "Concrete Network", url: "https://www.concretenetwork.com/" },
+    { name: "The Constructor", url: "https://theconstructor.org/" },
+    { name: "National Society of Professional Engineers", url: "https://www.nspe.org/" },
+    { name: "Engineering Institute of Canada", url: "https://www.eic-ici.ca/" },
+    { name: "British Geotechnical Association", url: "https://www.britishgeotech.org.uk/" },
+    { name: "American Society of Civil Engineers (ASCE)", url: "https://www.asce.org/" },
+    { name: "Institution of Civil Engineers (ICE)", url: "https://www.ice.org.uk/" },
+    { name: "Structural Engineers Association", url: "https://www.seaoc.org/" },
+    { name: "Concrete Society", url: "https://www.concrete.org.uk/" },
+    { name: "Building Research Establishment (BRE)", url: "https://www.bregroup.com/" },
+    { name: "International Federation for Structural Concrete (fib)", url: "https://www.fib-international.org/" },
+    { name: "American Concrete Institute", url: "https://www.concrete.org/" },
+    { name: "Engineering Toolbox", url: "https://www.engineeringtoolbox.com/" },
+    { name: "Civil Engineering Forum", url: "https://www.civilax.com/" },
+    { name: "Society of Civil Engineers", url: "https://www.societyofcivilengineers.com/" }
+];
+
+// Function to display links in the respective categories
+function displayLinks() {
+    const textbooksList = document.getElementById('textbooks-list');
+    const journalsList = document.getElementById('journals-list');
+    const aiToolsList = document.getElementById('ai-tools-list');
+    const otherResourcesList = document.getElementById('other-resources-list');
+
+    // Add textbook links
+    textbooks.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
+        textbooksList.appendChild(li);
+    });
+
+    // Add journal links
+    journals.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
+        journalsList.appendChild(li);
+    });
+
+    // Add AI tool links
+    aiTools.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
+        aiToolsList.appendChild(li);
+    });
+
+    // Add other resources links
+    otherResources.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}" target="_blank">${item.name}</a>`;
+        otherResourcesList.appendChild(li);
+    });
+}
+
+// Call the displayLinks function when the page loads
+document.addEventListener('DOMContentLoaded', displayLinks);
