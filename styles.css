@@ -81,7 +81,7 @@ footer {
     bottom: 0;
     z-index: 1000;
     font-size: 14px;
-    border-top: 3px solid #002850;
+    border-top: 0px solid #002850;
 }
 
 footer a {
