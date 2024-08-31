@@ -1,110 +1,82 @@
-/* General styling for the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Container for the entire page */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #fff;
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
     padding: 20px;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #004b80;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+/* Section Styling */
+main {
+    display: grid;
+    gap: 20px;
+}
+
+section {
+    background-color: #fff;
     border-radius: 8px;
+    padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the logo container */
-.logo-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Styling for the logo image */
-.logo {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Heading styles */
-h1 {
-    color: #005f73; /* Dark blue color */
-    text-align: center;
+h2 {
+    color: #004b80;
     margin-bottom: 10px;
 }
 
-h2 {
-    color: #005f73; /* Dark blue color */
-    border-bottom: 2px solid #005f73;
-    padding-bottom: 5px;
-    margin-top: 30px;
-}
-
-/* Paragraph styling */
-p {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #666;
-}
-
-/* Styling for resource lists */
+/* List Styling */
 ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
 }
 
 ul li {
-    background-color: #e6f1f5; /* Light blue background */
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth hover effect */
+    padding: 5px 0;
 }
 
-/* Link styling */
 ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #005f73; /* Dark blue color */
+    text-decoration: none;
+    color: #004b80;
     font-weight: bold;
 }
 
-/* Hover effect for resource items */
-ul li:hover {
-    background-color: #cce7ee; /* Slightly darker blue for hover */
+ul li a:hover {
+    color: #ff6600;
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
-    background: linear-gradient(135deg, #005f73 0%, #003b46 100%); /* Gradient background */
-    color: #fff; /* White text color */
-    padding: 20px 0; /* Vertical padding */
-    text-align: center; /* Center-align text */
-    margin-top: 30px; /* Margin at the top */
-}
-
-.footer-content {
-    width: 80%; /* Width of footer content */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Center the content */
-    font-size: 0.9em; /* Slightly smaller font size */
-    line-height: 1.6; /* Line height for readability */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .logo {
-        max-width: 150px;
-    }
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
 }
